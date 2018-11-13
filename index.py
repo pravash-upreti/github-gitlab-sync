@@ -5,8 +5,6 @@ import sync  as s
 app = Flask(__name__)  # Standard Flask app
 webhook = Webhook(app) # Defines '/postreceive' endpoint
 
-s.setup_env()
-
 @app.route("/")        # Standard Flask endpoint
 def hello_world():
     return "Hi, I am repo-sync-agent"
