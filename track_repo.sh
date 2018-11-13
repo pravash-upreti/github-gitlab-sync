@@ -13,7 +13,7 @@ grep -v '\->' |
 while read remote; 
     do
         # track all the branch        
-        git branch --track "${remote#origin/}" "$remote";
+        git branch --track "${remote#github/}" "$remote";
     done
     
 
