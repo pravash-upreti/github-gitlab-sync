@@ -14,7 +14,7 @@ cd $LOCAL_REPO_PATH
 
 echo "Coloned locally"
 
-git remote set-url origin --add $GITHUB_REPO
+# git remote set-url origin --add $GITHUB_REPO
 git remote set-url origin --add $GITLAB_REPO
 echo "Origin added"
 
