@@ -1,5 +1,6 @@
 #!/bin/bash
 
-./setup_env.sh
+# export variable in same process
+. ./setup_env.sh
 
 python3 index.py
