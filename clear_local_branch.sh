@@ -6,7 +6,6 @@ cd $LOCAL_REPO_PATH
 # checkout to master and we are not deleting this branch
 git checkout master 
 
-# escape line containing '->' string
 git fetch -p
 
 
