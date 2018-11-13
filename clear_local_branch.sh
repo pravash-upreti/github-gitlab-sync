@@ -24,7 +24,7 @@ while read remote;
         # delete the branch locally
         # this will prevent from pushing the same branch to github
         echo "deleting branch : $branch"
-        git push gitlab --delete $branch
+        git push $GITLAB_REPO --delete $branch
         git branch -D $branch;
         
     done
