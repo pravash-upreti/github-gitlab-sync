@@ -3,9 +3,6 @@
 #change repo dir
 cd $LOCAL_REPO_PATH 
 
-# fetch all tracked branch from all remote origin
-git fetch --all
-
 # pull all tracked branch from all remote origin
 git pull --all
 
