@@ -21,7 +21,7 @@ echo "Origin added"
 git remote -v
 
 git config --global url.ssh://git@github.com/.insteadOf https://github.com/
-git config --global url.ssh://git@$GITLAB_DOMAIN/.insteadOf $GITLAB_DOMAIN/
+git config --global url.ssh://git@$GITLAB_DOMAIN/.insteadOf https://$GITLAB_DOMAIN/
 
 # back to home directory
 cd ../
