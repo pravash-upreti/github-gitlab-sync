@@ -24,6 +24,7 @@ while read remote;
         # delete the branch locally
         # this will prevent from pushing the same branch to github
         git branch -D $branch;
+        git push origin --delete $branch;
     done
     
 
