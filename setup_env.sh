@@ -8,12 +8,13 @@ source ~/.bash/zshrc
 # Delete previous repo
 rm -rf $LOCAL_REPO_PATH
 
-git clone --origin github $GITHUB_REPO
+git clone  $GITHUB_REPO
 
 cd $LOCAL_REPO_PATH
 
 echo "Coloned locally"
 
+git remote set-url github --add $GITHUB_REPO
 git remote set-url gitlab --add $GITLAB_REPO
 echo "Origin added"
 
