@@ -13,7 +13,7 @@ git fetch -p
 for branch in `git branch -vv | grep ': gone]' | awk '{print $1}'`; 
 do 
     echo "deleting branch : $branch";
-        git push origin --delete $branch;
+    git push origin --delete $branch;
     git branch -D $branch; 
 done
     
