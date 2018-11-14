@@ -16,7 +16,7 @@ do
     echo "deleting branch : $branch";
     
     # delete the branch to origin. github already deleted so gitlab will delete
-    git push origin --delete $branch;
+    git push ssh://git@$GITLAB_DOMAIN/InHouse/$REPO_NAME.git --delete $branch;
 
     # also delete from local repo
     git branch -D $branch; 
