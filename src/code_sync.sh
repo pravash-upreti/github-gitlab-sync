@@ -4,7 +4,7 @@
 cd $LOCAL_REPO_PATH 
 
 # pull all tracked branch from all remote origin
-git pull --all
+git pull --all origin
 
 # push all tracked branch to gitlab remote origin
 git push --all $GITLAB_REPO
