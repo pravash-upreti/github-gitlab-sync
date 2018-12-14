@@ -19,6 +19,8 @@ while read remote;
         # this is like running git branch --track fe1 origin/fe1 ie copy the remote branch to local
 
         git branch --track "${remote#origin/}" "$remote";
+        echo "Pulling " ${remote#origin/}
+        git checkout ${remote#origin/} &&  git pull
     done
     
 
