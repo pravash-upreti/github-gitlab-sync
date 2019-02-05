@@ -20,7 +20,7 @@ while read remote;
 
         git branch --track "${remote#origin/}" "$remote";
         echo "Pulling " ${remote#origin/}
-        git checkout ${remote#origin/} &&  git pull
+        git checkout ${remote#origin/} && git stash && git pull
     done
     
 
