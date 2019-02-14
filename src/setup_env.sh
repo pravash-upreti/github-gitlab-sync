@@ -1,5 +1,5 @@
 #!/bin/bash
-git clone $GITHUB_REPO
+git clone --mirror $GITHUB_REPO
 cd $LOCAL_REPO_PATH
 echo "Coloned locally"
 # git remote set-url origin --add $GITHUB_REPO
