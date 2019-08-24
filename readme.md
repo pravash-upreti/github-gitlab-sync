@@ -1,5 +1,5 @@
 ## Installation steps
-- add ssh public key to both gilab and github account
+- add ssh public key to both gitlab and github account
 - install docker and docker compose in you server
 - create docker-compose file and past below code. Edit the env variable and port
 - add webhook on github to your server ip and port
