@@ -1,3 +1,11 @@
+# Github To Gitlab Sync
+
+Github To Gitlab Sync tool is created for sync the github repo to gitlab. The main purpose of building this tools is to use gitlab-ci.
+
+## Application Architecture
+
+![alt Architecture](image/architecture.png)
+
 ## Installation steps
 - add ssh public key to both gitlab and github account
 - install docker and docker compose in you server
